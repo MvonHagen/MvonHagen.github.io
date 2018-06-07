@@ -176,9 +176,9 @@ p {
 
 .social-icons {
   color: black;
-  font-size: 8vw;
   text-align: center;
   line-height: 1%;
+  font-size: 16vw;
   margin-top: 0px;
   padding-top: 0px;
   margin-bottom: 5%;
@@ -362,6 +362,9 @@ h3 {
 @media (max-width: 480px) {
   #content {
     padding-top: 5vh;
+  }
+  .social-icons {
+    font-size: 16vw;
   }
   .about p {
     font-size: 1.5em;
