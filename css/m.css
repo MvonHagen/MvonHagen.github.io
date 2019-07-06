@@ -72,8 +72,8 @@ body {
 
 
 .img-circle {
-  max-width: 30vh;
-  max-height: 30vh;
+  max-width: 45vh;
+  max-height: 45vh;
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -356,7 +356,7 @@ h3 {
 }
 
 .headerPic {
-  font-size: 7vw;
+  font-size: 5vw;
 }
 
 @media (max-width: 480px) {
