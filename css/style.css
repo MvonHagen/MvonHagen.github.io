@@ -1,0 +1,135 @@
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: normal;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2");
+}
+
+/** Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: bold;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2");
+}
+
+:root {
+  --main-color: rgb(0, 51, 89);
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", 'Avenir Black', 'Avenir', 'Roboto', sans-serif;
+  color: black;
+  background: white;
+}
+
+body {
+  margin: 0;
+}
+
+#content {
+  margin: 0 auto;
+  padding: 15vh 5% 0 5%;
+}
+
+
+.img-circle {
+  max-width: 45vh;
+  max-height: 45vh;
+  text-align: center;
+  border: 0.5vh solid var(--main-color);
+  border-radius: 50%;
+  display: inline;
+}
+
+.img-circle:hover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 0.5vh solid var(--main-color);
+  box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.5);
+}
+
+.social-icons {
+  color: black;
+  text-align: center;
+  line-height: 1%;
+  font-size: 10vw;
+  margin-top: 10vh;
+  margin-bottom: 5%;
+}
+
+.social-icons a, .social-icons i {
+  color: var(--main-color);
+}
+
+.social-icons a:hover, .social-icons i:hover {
+  transform: scale(1.2, 1.2);
+  z-index: 0;
+}
+
+.about {
+  text-align: center;
+  margin: 0 auto;
+  height: auto;
+}
+
+.nav {
+  background-color: var(--main-color);
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.nav a, #githublink {
+  z-index: 1;
+  padding: 1vw 2vw;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+#centernav {
+  text-align: center;
+}
+
+.nav a:hover, #githublink:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+
+.e404 {
+  padding-top: 2vh;
+}
+
+.e404 h1 {
+  font-size: 10vh;
+}
+
+.startImage {
+  width: 20vw;
+}
+
+.headerPic {
+  font-size: 5vw;
+}
+
+@media (max-width: 480px) {
+  .social-icons {
+    font-size: 16vw;
+  }
+  .nav a {
+    font-size: 6vw;
+  }
+}
