@@ -2,21 +2,21 @@
 @font-face {
   font-family: "San Francisco";
   font-weight: normal;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2");
+  src: url("https://www.apple.com/wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.woff2");
 }
 
 /** Bold */
 @font-face {
   font-family: "San Francisco";
   font-weight: bold;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2");
+  src: url("https://www.apple.com/wss/fonts/SF-Pro-Display/v3/sf-pro-display_semibold.woff2");
 }
 
 :root {
   /** --main-color: rgb(0, 51, 89); */
   color-scheme: light dark;
   --main-color: rgb(0, 51, 89);
-  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", 'Avenir Black', 'Avenir', 'Roboto', sans-serif;
+  font-family: "San Francisco", sans-serif;
   --page-background: white;
   --page-text: white;
 }
