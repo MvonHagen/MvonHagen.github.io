@@ -13,13 +13,21 @@
 }
 
 :root {
+  /** --main-color: rgb(0, 51, 89); */
+  color-scheme: light dark;
   --main-color: rgb(0, 51, 89);
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", 'Avenir Black', 'Avenir', 'Roboto', sans-serif;
+  --page-background: white;
+  --page-text: white;
 }
 
-html {
-  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", 'Avenir Black', 'Avenir', 'Roboto', sans-serif;
-  color: black;
-  background: white;
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light dark;
+    --main-color: white;
+    --page-background: black;
+    --page-text: black;
+  }
 }
 
 body {
@@ -49,11 +57,11 @@ body {
   -moz-border-radius: 50%;
   border-radius: 50%;
   border: 0.5vh solid var(--main-color);
-  box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.5em 0.1em var(--main-color);
 }
 
 .social-icons {
-  color: black;
+  color: var(--main-color);
   text-align: center;
   line-height: 1%;
   font-size: 10vw;
@@ -66,7 +74,7 @@ body {
 }
 
 .social-icons a:hover, .social-icons i:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
   z-index: 0;
 }
 
@@ -90,22 +98,23 @@ body {
   flex-wrap: nowrap;
   flex-direction: row;
   width: 100%;
+  color: var(--page-text);
 }
 
-.nav a, #githublink {
+.nav a {
   z-index: 1;
   padding: 1vw 2vw;
-  color: rgba(255, 255, 255, 1);
   text-decoration: none;
   font-size: 3vh;
+  color: var(--page-text);
 }
 
 #centernav {
   text-align: center;
 }
 
-.nav a:hover, #githublink:hover {
-  background-color: white;
+.nav a:hover {
+  background-color: var(--page-background);
   color: var(--main-color);
 }
 
