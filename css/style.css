@@ -18,7 +18,8 @@
   --main-color: rgb(0, 51, 89);
   font-family: "San Francisco", sans-serif;
   --page-background: white;
-  --page-text: white;
+  --nav-text: white;
+  --page-text: black;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -26,7 +27,8 @@
     color-scheme: light dark;
     --main-color: white;
     --page-background: black;
-    --page-text: black;
+    --nav-text: black;
+    --page-text: white;
   }
 }
 
@@ -98,7 +100,7 @@ body {
   flex-wrap: nowrap;
   flex-direction: row;
   width: 100%;
-  color: var(--page-text);
+  color: var(--nav-text);
 }
 
 .nav a {
@@ -106,7 +108,22 @@ body {
   padding: 1vw 2vw;
   text-decoration: none;
   font-size: 3vh;
+  color: var(--nav-text);
+}
+
+.four04 {
+  font-size: 3vw;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--page-text);
+}
+
+.four04 a {
+  color: var(--main-color);
+  text-decoration: none;
 }
 
 #centernav {
@@ -141,4 +158,68 @@ body {
   .nav a {
     font-size: 6vw;
   }
+}
+
+
+
+.linelink {
+  position: relative;
+  text-decoration: none;
+  color: #303f9f;
+  z-index: 1;
+}
+
+.linelink:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.075em;
+  bottom: 0.125em;
+  left: 0;
+  background: rgba(0, 0, 255, 0.9);
+  visibility: hidden;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+
+.linelink:hover:before,
+.linelink:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.multilinelink {
+  text-decoration: none;
+  color: rgba(0, 0, 255, 0.9);
+}
+
+.multilinelink:hover {
+  text-decoration: underline;
+}
+
+
+
+.footer {
+  background-color: black;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+}
+
+footer {
+  font-size: 1.5em;
+}
+
+.footer a {
+  color: rgba(0, 0, 255, 0.9);
+  z-index: -1;
+  text-decoration: none;
 }
