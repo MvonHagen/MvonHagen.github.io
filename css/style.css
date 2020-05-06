@@ -49,12 +49,6 @@ body {
   background-color: var(--background-color);
 }
 
-#content {
-  margin: 0 auto;
-  padding: 15vh 5% 0 5%;
-}
-
-
 .img-circle {
   max-width: 45vh;
   max-height: 45vh;
@@ -93,10 +87,11 @@ body {
   color: var(--hover-color);
 }
 
-.about {
+.site {
   text-align: center;
   margin: 0 auto;
   height: auto;
+  padding: 15vh 5% 0 5%;
 }
 
 .nav {
@@ -131,10 +126,6 @@ body {
 .nav a:hover {
   background-color: var(--hover-color);
   color: var(--background-color);
-}
-
-.headerPic {
-  font-size: 5vw;
 }
 
 @media (max-width: 480px) {
