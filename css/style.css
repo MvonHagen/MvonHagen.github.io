@@ -13,23 +13,23 @@
 :root {
   /* SETUP */
   /* colors */
-  --centerblue: #174489;
-  --tum-dark-blue: #003359;
+  --center-blue: #174489;
+  --black: #000000;
+  --white: #ffffff;
   --tum-blue: #0065BD;
-  --dark: #000000;
-  --light: #ffffff;
-  --tum-mid-blue: #005293;
-  --tum-dark-grey: #333333;
-  --tum-mid-grey: #808080;
-  --tum-orange: #E37222;
   --tum-light-blue: #64A0C8;
+  --tum-mid-blue: #005293;
+  --tum-dark-blue: #003359;
+  --tum-mid-grey: #808080;
+  --tum-dark-grey: #333333;
+  --tum-orange: #E37222;
 
   /* other stuff */
   font-family: "San Francisco", sans-serif;
 
   /* light mode */
   --accent-color: var(--tum-dark-blue);
-  --background-color: var(--light);
+  --background-color: var(--white);
   --hover-color: var(--tum-mid-blue);
 }
 
@@ -37,7 +37,7 @@
   :root {
     /* dark mode */
     --accent-color: var(--tum-blue);
-    --background-color: var(--dark);
+    --background-color: var(--black);
     --hover-color: var(--tum-mid-blue);
   }
 }
