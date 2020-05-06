@@ -85,12 +85,13 @@ body {
 }
 
 .img-circle {
+  --border-radius: 15%;
   max-width: 45vh;
   max-height: 45vh;
   text-align: center;
   border: .8vh solid var(--accent-color);
   /*box-shadow: 0 0 0 0.4em var(--accent-color);*/
-  border-radius: 50%;
+  border-radius: var(--border-radius);
   display: inline;
 }
 
@@ -100,7 +101,7 @@ body {
   background-position: center center;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border-radius: 50%;
+  border-radius: var(--border-radius);
   border: 0.8vh solid var(--hover-color);
   /* /optional: bigger border when hovering/ box-shadow: 0 0 0 0.6em var(--accent-color); */
 }
