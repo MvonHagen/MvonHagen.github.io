@@ -11,27 +11,42 @@
 }
 
 :root {
-  /** --main-color: rgb(0, 51, 89); */
-  color-scheme: light dark;
-  --main-color: rgb(0, 51, 89);
+  /* SETUP */
+  /* colors */
+  --midnightblue: rgb(0, 51, 89);
+  --centerblue: #174489;
+  --tum-dark-blue: #003359;
+  --tum-blue: #0065BD;
+  --dark: #000000;
+  --light: #ffffff;
+  --tum-mid-blue: #005293;
+  --tum-dark-grey: #333333;
+  --tum-mid-grey: #808080;
+  --tum-orange: #E37222;
+  --tum-light-blue: #64A0C8;
+
+  /* other stuff */
   font-family: "San Francisco", sans-serif;
-  --page-background: white;
-  --nav-text: white;
-  --page-text: black;
+
+  /*light mode*/
+  /*color-scheme: light dark;*/
+
+  --accent-color: var(--tum-dark-blue);
+  --background-color: var(--light);
+  --hover-color: var(--tum-mid-blue);
 }
 
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    color-scheme: light dark;
-    --main-color: white;
-    --page-background: black;
-    --nav-text: black;
-    --page-text: white;
+    --accent-color: var(--tum-blue);
+    --background-color: var(--dark);
+    --hover-color: var(--tum-mid-blue);
   }
 }
 
 body {
   margin: 0;
+  background-color: var(--background-color);
 }
 
 #content {
@@ -44,7 +59,8 @@ body {
   max-width: 45vh;
   max-height: 45vh;
   text-align: center;
-  border: 0.5vh solid var(--main-color);
+  border: .8vh solid var(--accent-color);
+  /*box-shadow: 0 0 0 0.4em var(--accent-color);*/
   border-radius: 50%;
   display: inline;
 }
@@ -56,12 +72,12 @@ body {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 0.5vh solid var(--main-color);
-  box-shadow: 0 0 0.5em 0.1em var(--main-color);
+  border: 0.8vh solid var(--hover-color);
+  /* /optional: bigger border when hovering/ box-shadow: 0 0 0 0.6em var(--accent-color); */
 }
 
 .social-icons {
-  color: var(--main-color);
+  color: var(--accent-color);
   text-align: center;
   line-height: 1%;
   font-size: 10vw;
@@ -70,12 +86,11 @@ body {
 }
 
 .social-icons a, .social-icons i {
-  color: var(--main-color);
+  color: var(--accent-color);
 }
 
 .social-icons a:hover, .social-icons i:hover {
-  transform: scale(1.1, 1.1);
-  z-index: 0;
+  color: var(--hover-color);
 }
 
 .about {
@@ -85,7 +100,7 @@ body {
 }
 
 .nav {
-  background-color: var(--main-color);
+  background-color: var(--accent-color);
   overflow: hidden;
   position: fixed;
   left: 0;
@@ -98,7 +113,7 @@ body {
   flex-wrap: nowrap;
   flex-direction: row;
   width: 100%;
-  color: var(--nav-text);
+  color: var(--background-color);
 }
 
 .nav a {
@@ -106,22 +121,7 @@ body {
   padding: 1vw 2vw;
   text-decoration: none;
   font-size: 3vh;
-  color: var(--nav-text);
-}
-
-.four04 {
-  font-size: 3vw;
-  margin: 0;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--page-text);
-}
-
-.four04 a {
-  color: var(--main-color);
-  text-decoration: none;
+  color: var(--background-color);
 }
 
 #centernav {
@@ -129,21 +129,10 @@ body {
 }
 
 .nav a:hover {
-  background-color: var(--page-background);
-  color: var(--main-color);
+  background-color: var(--hover-color);
+  color: var(--background-color);
 }
 
-.e404 {
-  padding-top: 2vh;
-}
-
-.e404 h1 {
-  font-size: 10vh;
-}
-
-.startImage {
-  width: 20vw;
-}
 
 .headerPic {
   font-size: 5vw;
@@ -156,68 +145,4 @@ body {
   .nav a {
     font-size: 6vw;
   }
-}
-
-
-
-.linelink {
-  position: relative;
-  text-decoration: none;
-  color: #303f9f;
-  z-index: 1;
-}
-
-.linelink:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 0.075em;
-  bottom: 0.125em;
-  left: 0;
-  background: rgba(0, 0, 255, 0.9);
-  visibility: hidden;
-  border-radius: 2px;
-  transform: scaleX(0);
-  transition: .25s linear;
-}
-
-.linelink:hover:before,
-.linelink:focus:before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-
-.multilinelink {
-  text-decoration: none;
-  color: rgba(0, 0, 255, 0.9);
-}
-
-.multilinelink:hover {
-  text-decoration: underline;
-}
-
-
-
-.footer {
-  background-color: black;
-  overflow: hidden;
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 0px;
-  padding-bottom: 2vh;
-  padding-top: 2vh;
-}
-
-footer {
-  font-size: 1.5em;
-}
-
-.footer a {
-  color: rgba(0, 0, 255, 0.9);
-  z-index: -1;
-  text-decoration: none;
 }
