@@ -1,14 +1,12 @@
-/** Medium */
 @font-face {
   font-family: "San Francisco";
   font-weight: normal;
   src: url("https://www.apple.com/wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.woff2");
 }
 
-/** Bold */
 @font-face {
   font-family: "San Francisco";
-  font-weight: bold;
+  font-weight: /*semi*/ bold;
   src: url("https://www.apple.com/wss/fonts/SF-Pro-Display/v3/sf-pro-display_semibold.woff2");
 }
 
