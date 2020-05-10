@@ -36,9 +36,9 @@
 @media screen and (prefers-color-scheme: dark) {
   :root {
     /* dark mode */
-    --accent-color: var(--tum-blue);
+    --accent-color: var(--tum-mid-blue);
     --background-color: var(--black);
-    --hover-color: var(--tum-mid-blue);
+    --hover-color: var(--tum-blue);
   }
 }
 
@@ -110,7 +110,7 @@ body {
   color: var(--accent-color);
   text-align: center;
   line-height: 1%;
-  font-size: 10vw;
+  font-size: 10vh;
   margin-top: 10vh;
   margin-bottom: 5%;
 }
