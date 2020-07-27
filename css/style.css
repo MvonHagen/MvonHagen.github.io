@@ -25,7 +25,7 @@
   --tum-orange: #E37222;
 
   /* other stuff */
-  font-family: "San Francisco", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "San Francisco", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
   /* light mode */
   --accent-color: var(--tum-dark-blue);
